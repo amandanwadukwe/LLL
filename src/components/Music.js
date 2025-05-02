@@ -12,7 +12,7 @@ const Music = () => {
   // Playlist data
   const playlists = {
     'queer-afrobeat': {
-      title: "Queer Afrobeat Revolution",
+      title: "Queer Afrobeat",
       tracks: [
         {
           id: '1',
@@ -36,7 +36,7 @@ const Music = () => {
       ]
     },
     'trauma-vibes': {
-      title: "African and Lesbian",
+      title: "More",
       tracks: [
         {
           id: '5',
