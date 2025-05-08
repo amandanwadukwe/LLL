@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
+
 const Header = () => {
   const headerRef = useRef();
 
@@ -20,7 +21,7 @@ const Header = () => {
   return (
     <header className="container" ref={headerRef}>
       <div className="grid-2">
-        <Link to="/" className="logo">QUEER. AFROBEAT.</Link>
+        <Link to="/" className="logo">BLACK. QUEER. WOMAN.</Link>
         <nav>
           <ul>
             {/* <li><Link to="/highlights">Highlights</Link></li> */}
@@ -28,6 +29,8 @@ const Header = () => {
             {/* <li><Link to="/events">Events</Link></li> */}
             {/* <li><Link to="/gallery">Gallery</Link></li> */}
             <li><Link to="/music">Music</Link></li>
+            <li><Link to="/videos">Videos</Link></li>
+            <li><Link to="/podcasts">Podcasts</Link></li>
           </ul>
         </nav>
       </div>

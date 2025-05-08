@@ -39,24 +39,6 @@ const Hero = () => {
       <div className="container">
         <div className="grid-2">
           {/* Left side: Text */}
-          <div>
-            <h1 className="hero-title" ref={heroTitleRef}>
-              LUSH & LOUD by <span>LAJU</span>
-            </h1>
-            <p style={{ fontSize: '1.2em', marginTop: '20px' }}>
-              Welcome to <strong>Lush & Loud by LAJU</strong>
-              <br /><br />
-              This is a home for Black queer women who believe in love, the kind that heals, the kind that fights, the kind that feels like freedom.
-              <br /><br />
-              I’m Laju, a Nigerian lesbian building a future I couldn’t have back home. This space is my love letter to us: to the women who’ve had to leave, the women who stay and resist, and the ones still finding their way.
-              <br /><br />
-              Whether you’re here to dance, to heal, or just to breathe easy for a while, you’re welcome.
-              <br /><br />
-              💋 Laju
-            </p>
-          </div>
-
-          {/* Right side: Image + Track */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div 
               className="hero-image" 
@@ -84,6 +66,26 @@ const Hero = () => {
               style={{ borderRadius: '8px', maxWidth: '400px' }}
             ></iframe>
           </div>
+          {/* Right side: Image + Track */}
+          <div>
+            <h1 className="hero-title" ref={heroTitleRef}>
+              LUSH & LOUD by <span>LAJU</span>
+            </h1>
+            <p style={{ fontSize: '1.2em', marginTop: '20px' }}>
+              Welcome to <strong>Lush & Loud by LAJU</strong>
+              <br /><br />
+              This is a home for Black queer women who believe in love, the kind that heals, the kind that fights, the kind that feels like freedom.
+              <br /><br />
+              I’m Laju, a Nigerian lesbian building a future I couldn’t have back home. This space is my love letter to us: to the women who’ve had to leave, the women who stay and resist, and the ones still finding their way.
+              <br /><br />
+              Whether you’re here to dance, to heal, or just to breathe easy for a while, you’re welcome.
+              <br /><br />
+              💋 Laju
+            </p>
+          </div>
+
+          
+          
         </div>
       </div>
     </section>

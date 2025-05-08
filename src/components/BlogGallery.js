@@ -14,7 +14,7 @@ const BlogGallery = () => {
         id: 1,
         title: "What Does It Mean to Be Intersex?",
         excerpt: "Exploring the realities of intersex identity in our society...",
-        tags: ["intersex", "education", "identity+"],
+        tags: ["intersex", "education", "identity"],
         date: "2025-05-01",
         series: "Understanding the Alphabet Gang",
         seriesOrder: 1,
@@ -22,10 +22,10 @@ const BlogGallery = () => {
       },
       {
         id: 2,
-        title: "Why Pronouns Are Powerful: The Everyday Impact of “They/Them”",
+        title: "Why Pronouns Are Powerful: The Everyday Impact of 'They/Them'",
         excerpt: "",
         tags: ["education", "language", "they/them"],
-        date: "",
+        date: "2025-05-01",
         series: "Understanding the Alphabet Gang", 
         seriesOrder: 2,
         image: "https://media.istockphoto.com/id/1245924693/vector/coming-soon.webp?a=1&b=1&s=612x612&w=0&k=20&c=8HbAe82ef34coQAQIPkW__9ADvHKZ8vUaLUhhN99dUI="
@@ -34,9 +34,19 @@ const BlogGallery = () => {
         id: 3,
         title: "What It Means to Be Trans: Looking Like How You Feel",
         excerpt: "",
+        series: "Understanding the Alphabet Gang",
+        seriesOrder: 3,
         tags: ["identity", "education", "transgender", "healing"],
         date: "",
         image: "https://media.istockphoto.com/id/1245924693/vector/coming-soon.webp?a=1&b=1&s=612x612&w=0&k=20&c=8HbAe82ef34coQAQIPkW__9ADvHKZ8vUaLUhhN99dUI="
+      },
+      {
+        id: 4,
+        title: "Crossing The Line by Tracy Cress",
+        excerpt: "",
+        tags: ["romance", "book", "erotic"],
+        date: "03-05-2025",
+        image: "https://files.selar.co/product-images/2024/products/tracy-bernard1/crossing-the-line-an-inte-selar.co-6712fdbcc9183.jpeg"
       }
     ];
     
@@ -46,7 +56,22 @@ const BlogGallery = () => {
 
   useEffect(() => {
     let results = posts;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
+    // First filter by date (only show posts with date before or equal to today)
+    results = results.filter(post => {
+      if (!post.date) return false; // Hide posts without dates
+      try {
+        const postDate = new Date(post.date);
+        postDate.setHours(0, 0, 0, 0);
+        return postDate <= today;
+      } catch {
+        return false; // Hide posts with invalid dates
+      }
+    });
+
+    // Then apply search and tag filters
     if (searchTerm) {
       results = results.filter(post =>
         post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -123,7 +148,7 @@ const BlogPostCard = ({ post, rainbowGradient }) => {
         <p className="excerpt">{post.excerpt}</p>
 
         <div className="post-meta">
-          <span>{new Date(post.date).toLocaleDateString()}</span>
+          <span>{new Date(post.date).toLocaleDateString() != "Invalid Date" ? new Date(post.date).toLocaleDateString() : "Coming Soon"}</span>
           <div className="tags">
             {post.tags.map(tag => (
               <span key={tag} className="tag">{tag}</span>
