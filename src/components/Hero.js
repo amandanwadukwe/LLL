@@ -67,7 +67,7 @@ const Hero = () => {
             ></iframe>
           </div>
           {/* Right side: Image + Track */}
-          <div>
+          <div className="about" id="about">
             <h1 className="hero-title" ref={heroTitleRef}>
               LUSH & LOUD by <span>LAJU</span>
             </h1>

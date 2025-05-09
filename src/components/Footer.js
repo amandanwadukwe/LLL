@@ -3,7 +3,7 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="footer-links">
-            <a href="#">About</a>
+            <span style={{cursor:"pointer"}} onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>About</span>
             {/* <a href="#">Submit</a>
             <a href="#">Contact</a> */}
             <a href="https://www.instagram.com/lush_loud_laju/" target="_blank">Instagram</a>

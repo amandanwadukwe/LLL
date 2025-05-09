@@ -93,8 +93,13 @@
   nav a:hover::after {
     width: 100%;
   }
+
+
   
   /* ===== HERO ===== */
+ .about{
+  margin-top:5rem;
+ }
   .hero {
     margin-bottom: 80px;
     min-height: 80vh;
@@ -103,7 +108,7 @@
   }
   
   .hero-title {
-    font-size: clamp(48px, 16vw, 120px);
+    font-size: clamp(48px, 15vw, 120px);
     line-height: 1.2;
     letter-spacing: -4px;
     margin: 0;
@@ -198,6 +203,7 @@
     border-top: 3px solid var(--black);
     padding-top: 20px;
     transition: var(--transition);
+    margin-bottom:1rem;
   }
   
   .event-card:hover {
@@ -212,6 +218,10 @@
     padding: 3px 10px;
     display: inline-block;
     margin-bottom: 10px;
+  }
+
+  .event-date img{
+    object-fit:cover;
   }
   
   .event-location {

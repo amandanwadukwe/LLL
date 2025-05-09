@@ -63,11 +63,13 @@ const Gallery = () => {
   });
 
   useEffect(() => {
-    // Load Instagram embed script
-    const script = document.createElement('script');
-    script.src = 'https://www.instagram.com/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
+    // Load Instagram embed script if not already present
+    if (!document.querySelector('script[src="https://www.instagram.com/embed.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
 
     // Intersection Observer for animations
     const observer = new IntersectionObserver((entries) => {
@@ -83,10 +85,16 @@ const Gallery = () => {
     }
 
     return () => {
-      document.body.removeChild(script);
       observer.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    // Reprocess Instagram embeds
+    if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+      window.instgrm.Embeds.process();
+    }
+  }, [filteredPosts]);
 
   // Rainbow gradient style
   const rainbowGradient = {

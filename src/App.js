@@ -8,6 +8,7 @@ import BlogRouter from './components/BlogRouter'; // Your nested router
 import Music from './components/Music';
 import VideoRouter from './components/VideoRouter ';
 import PodcastGallery from './components/PodcastGallery';
+import MusicFromQuery from './components/MusicFromQuery';
 import PodcastRouter from './components/PodcastRouter';
 import "./styles/global.css";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blog/*" element={<BlogRouter />} />
         <Route path="/videos/*" element={<VideoRouter />} />
         <Route path="/podcasts/*" element={<PodcastGallery />} />
+        <Route path="/playlists/:playlist" element={<MusicFromQuery />} />
       </Routes>
     </Router>
   );
