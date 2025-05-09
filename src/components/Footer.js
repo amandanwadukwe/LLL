@@ -8,7 +8,7 @@ const Footer = () => {
             <a href="#">Contact</a> */}
             <a href="https://www.instagram.com/lush_loud_laju/" target="_blank">Instagram</a>
           </div>
-          <p>© 2025 <strong>LUSH & LOUD by LAJU</strong>  | The Sound of Liberation</p>
+          <p>© 2025 <strong>LUSH & LOUD by LAJU</strong></p>
         </div>
       </footer>
     );
