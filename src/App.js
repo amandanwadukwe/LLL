@@ -9,6 +9,7 @@ import Music from './components/Music';
 import VideoRouter from './components/VideoRouter ';
 import PodcastGallery from './components/PodcastGallery';
 import MusicFromQuery from './components/MusicFromQuery';
+import Events from './components/Events';
 import PodcastRouter from './components/PodcastRouter';
 import "./styles/global.css";
 
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />} />
         <Route path="/highlights" element={<HighlightsPage />} />
-        <Route path="/events" element={<EventsPage />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/music" element={<Music />} />
         <Route path="/blog/*" element={<BlogRouter />} />

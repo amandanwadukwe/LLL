@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import Header from './Header';
 
 const Events = () => {
   const sectionRef = useRef();
@@ -22,7 +23,10 @@ const Events = () => {
   
 
   return (
+
+    <><Header />
     <section id="events" className="events section-animate" ref={sectionRef}>
+      
       <div className="container">
         <h2 style={{ marginBottom: '40px' }}>Upcoming Events</h2>
         <div className="grid-3">
@@ -43,6 +47,7 @@ const Events = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

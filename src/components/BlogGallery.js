@@ -21,11 +21,11 @@ const BlogGallery = () => {
         image: "https://images.unsplash.com/photo-1664203944383-f0b8aeae69e2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxibGFjayUyMGludGVyc2V4fGVufDB8fDB8fHww"
       },
       {
-        id: 2,
+        id: 4,
         title: "Why Pronouns Are Powerful: The Everyday Impact of 'They/Them'",
         excerpt: "",
         tags: ["education", "language", "they/them"],
-        date: "2025-05-01",
+        date: "2025-05-11",
         series: "Understanding the Alphabet Gang", 
         seriesOrder: 2,
         image: "https://media.istockphoto.com/id/1245924693/vector/coming-soon.webp?a=1&b=1&s=612x612&w=0&k=20&c=8HbAe82ef34coQAQIPkW__9ADvHKZ8vUaLUhhN99dUI="
@@ -37,15 +37,15 @@ const BlogGallery = () => {
         series: "Understanding the Alphabet Gang",
         seriesOrder: 3,
         tags: ["identity", "education", "transgender", "healing"],
-        date: "",
+        date: "2025-05-18",
         image: "https://media.istockphoto.com/id/1245924693/vector/coming-soon.webp?a=1&b=1&s=612x612&w=0&k=20&c=8HbAe82ef34coQAQIPkW__9ADvHKZ8vUaLUhhN99dUI="
       },
       {
-        id: 4,
+        id:2 ,
         title: "Crossing The Line by Tracy Cress",
         excerpt: "",
         tags: ["romance", "book", "erotic"],
-        date: "03-05-2025",
+        date: "2025-5-03",
         image: "https://files.selar.co/product-images/2024/products/tracy-bernard1/crossing-the-line-an-inte-selar.co-6712fdbcc9183.jpeg"
       }
     ];

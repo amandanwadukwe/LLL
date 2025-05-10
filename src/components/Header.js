@@ -31,6 +31,7 @@ const Header = () => {
             <li><Link to="/music">Music</Link></li>
             <li><Link to="/videos">Videos</Link></li>
             <li><Link to="/podcasts">Podcasts</Link></li>
+            <li><Link to="/events">Events</Link></li>
           </ul>
         </nav>
       </div>

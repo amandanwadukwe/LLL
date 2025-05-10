@@ -46,27 +46,28 @@ const BlogPost = () => {
           seriesOrder: 1
         },
         {
-          id: 2,
+          id:2,
+          title: "Crossing The Line by Tracy Cress",
+          content: "<div style='max-width: 700px; margin: auto; font-family: sans-serif; padding: 20px; line-height: 1.6;'><h2 style='margin-bottom: 10px;'>Crossing the Line is the black queer love story that took me back to Nigeria and wrecked me in the best way</h2><p>I grew up in Nigeria. And queerness there? It's rarely soft. It's rarely safe.</p><img src='https://files.selar.co/product-images/2024/products/tracy-bernard1/crossing-the-line-an-inte-selar.co-6712fdbcc9183.jpeg' alt='Crossing the Line book cover' style='width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px;'><p>But <em>Crossing the Line</em> by Tracy Cress gave me something different: a story where two Black women fall for each other quietly, tenderly, with love that's a little secret but surprisingly supported.</p><p>It felt like a dream of home I wish I'd known. One that smells like fried plantain and first love. A Nigeria that held space for softness, for joy, for people like me.</p><p>And then, the playlist. Afrobeats that wrap you up and don't let go. I pulled out the most romantic ones for you.</p><p><a href='/playlists/crossing-the-line' target='_blank' style='color: #e91e63; text-decoration: none;'>➤ Hit play and enjoy</a></p><p>Read it. Play it. And let it remind you that our stories deserve to be this soft.</p></div>",
+          date: "2025-05-02",
+          author: "LAJU",
+        },
+        {
+          id: 3,
           title: "Why Pronouns Are Powerful: The Everyday Impact of \"They/Them\"",
-          date: "2025-05-01",
+          date: "2025-05-11",
           content: "<div><p>Coming Soon</p></div>",
           series: "Understanding the Alphabet Gang",
           seriesOrder: 2
         },
         {
-          id: 3,
+          id: 4,
           title: "What It Means to Be Trans: Looking Like How You Feel",
           content: "<div><p>Coming Soon</p></div>",
           series: "Understanding the Alphabet Gang",
           seriesOrder: 3
         },
-        {
-          id: 4,
-          title: "Crossing The Line by Tracy Cress",
-          content: "<div style='max-width: 700px; margin: auto; font-family: sans-serif; padding: 20px; line-height: 1.6;'><h2 style='margin-bottom: 10px;'>Crossing the Line is the black queer love story that took me back to Nigeria and wrecked me in the best way</h2><p>I grew up in Nigeria. And queerness there? It's rarely soft. It's rarely safe.</p><img src='https://files.selar.co/product-images/2024/products/tracy-bernard1/crossing-the-line-an-inte-selar.co-6712fdbcc9183.jpeg' alt='Crossing the Line book cover' style='width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px;'><p>But <em>Crossing the Line</em> by Tracy Cress gave me something different: a story where two Black women fall for each other quietly, tenderly, with love that's a little secret but surprisingly supported.</p><p>It felt like a dream of home I wish I'd known. One that smells like fried plantain and first love. A Nigeria that held space for softness, for joy, for people like me.</p><p>And then, the playlist. Afrobeats that wrap you up and don't let go. I pulled out the most romantic ones for you.</p><p><a href='/playlists/crossing-the-line' target='_blank' style='color: #e91e63; text-decoration: none;'>➤ Hit play and enjoy</a></p><p>Read it. Play it. And let it remind you that our stories deserve to be this soft.</p></div>",
-          date: "2025-05-02",
-          author: "LAJU",
-        }
+       
       ];
 
       const currentPost = mockPosts.find(p => p.id === Number(id));
