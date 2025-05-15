@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />} />
         <Route path="/highlights" element={<HighlightsPage />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/events" element={<EventsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/music" element={<Music />} />
         <Route path="/blog/*" element={<BlogRouter />} />

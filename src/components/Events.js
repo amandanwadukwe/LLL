@@ -24,7 +24,7 @@ const Events = () => {
 
   return (
 
-    <><Header />
+    <>
     <section id="events" className="events section-animate" ref={sectionRef}>
       
       <div className="container">

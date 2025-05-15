@@ -1,13 +1,13 @@
 import AppLayout from '../components/AppLayout';
+import Events from '../components/Events';
+import Header from '../components/Header';
 
 const EventsPage = () => {
   return (
-    <AppLayout>
-      <div className="container">
-        <h1>Events Page</h1>
-        <p>This would show all events content</p>
-      </div>
-    </AppLayout>
+  <>
+      <Header />
+      <Events />
+      </>
   );
 };
 

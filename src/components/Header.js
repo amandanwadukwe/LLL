@@ -25,9 +25,8 @@ const Header = () => {
         <nav>
           <ul>
             {/* <li><Link to="/highlights">Highlights</Link></li> */}
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/blog">Blog</Link></li>
-            {/* <li><Link to="/events">Events</Link></li> */}
-            {/* <li><Link to="/gallery">Gallery</Link></li> */}
             <li><Link to="/music">Music</Link></li>
             <li><Link to="/videos">Videos</Link></li>
             <li><Link to="/podcasts">Podcasts</Link></li>
